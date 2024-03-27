@@ -30,7 +30,7 @@
     .section__title {
         @apply text-3xl;
     }
-
+    /* override one property in card title */
     .card__title {
         @apply text-xl;
     }
