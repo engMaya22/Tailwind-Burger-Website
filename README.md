@@ -4,6 +4,7 @@ This is a simple burger website template built with Tailwind CSS, featuring a da
 
 ## Features
 - Responsive design
+- slider
 - Dark mode switch
 - Beautiful animations
 
