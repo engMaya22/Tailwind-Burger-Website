@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
   content: ['./*.html'],
+  darkMode: 'class',
   theme: {
     // we can custom screen breakpoints
     screens: {

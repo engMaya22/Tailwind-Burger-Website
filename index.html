@@ -28,14 +28,15 @@
   </head>
   <body>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 dark:bg-darkColor" id="header">
       <nav class="container flex justify-between items-center h-14 relative">
         <div>
             <a href="#" class="text-2xl uppercase font-oswald">Bur<span class="text-secondaryColor">ger</span></a>
         </div>
         
         <div id="nav-menu" class=" hidden md:block  md:static md:py-0 md:border-none md:w-auto
-         absolute top-0 left-0 w-full  py-14 bg-primaryColor border-b border-secondaryColor">
+         absolute top-0 left-0 w-full  py-14 bg-primaryColor border-b border-secondaryColor
+         dark:bg-darkColor">
           <ul class="flex flex-col md:flex-row justify-center gap-5 text-center">
             <li><a href="#home" class="nav__link hover:text-secondaryColor ease-in duration-200">Home</a></li>
             <li><a href="#about" class="nav__link hover:text-secondaryColor ease-in duration-200">About Us</a></li>
@@ -48,7 +49,7 @@
           </div>
         </div>
         <div class="flex items-center gap-5 ">
-          <i class="ri-moon-line cursor-pointer text-xl ml-4"></i>
+          <i class="ri-moon-line cursor-pointer text-xl ml-4"  id="theme-toggle"></i>
           <div id="hamburger" class="md:hidden">
             <i class="ri-menu-2-line cursor-pointer text-xl "></i>
           </div>
@@ -158,7 +159,7 @@
       <section id="promo">
         <div class="container flex flex-col  gap-5 lg:flex-row lg:gap-10">
           <!-- card1 -->
-             <div class="flex flex-col bg-primaryColorLight p-5 rounded-lg md:flex-row md:items-center 
+             <div class="flex flex-col bg-primaryColorLight dark:bg-darkColor p-5 rounded-lg md:flex-row md:items-center 
              lg:flex-1 lg:flex-row-reverse">
                <img src="img/promo-1.png" alt="promo image" class="w-40 mx-auto  hover:animate-movingY md:mx-5 ">
                 <div class=" pt-5 space-y-2 md:pt-0">
@@ -169,7 +170,7 @@
                 </div>
              </div>
                <!-- card 2-->
-               <div class="flex flex-col bg-primaryColorLight p-5 rounded-lg
+               <div class="flex flex-col bg-primaryColorLight dark:bg-darkColor p-5 rounded-lg
                             md:flex-row md:items-center 
                             lg:flex-1 lg:flex-row-reverse">
                 <img src="img/promo-2.png" alt="promo image" class="w-40 mx-auto  hover:animate-movingY md:mx-5">
@@ -217,10 +218,10 @@
             <p class="paraghraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.          </p>
             <div class="tabs_wrap">
               <ul class="flex flex-wrap justify-center  gap-3 py-10">
-                <li  data-tabs="all" class="btn bg-primaryColorLight active">All</li>
-                <li  data-tabs="food" class="btn bg-primaryColorLight">Food</li>
-                <li  data-tabs="snack"  class="btn bg-primaryColorLight">Snack</li>
-                <li  data-tabs="beverage"  class="btn bg-primaryColorLight">Beverage</li>
+                <li  data-tabs="all" class="btn bg-primaryColorLight active dark:bg-darkColorLight">All</li>
+                <li  data-tabs="food" class="btn bg-primaryColorLight dark:bg-darkColorLight">Food</li>
+                <li  data-tabs="snack"  class="btn bg-primaryColorLight dark:bg-darkColorLight">Snack</li>
+                <li  data-tabs="beverage"  class="btn bg-primaryColorLight dark:bg-darkColorLight">Beverage</li>
               </ul>
             </div>
         </div>
@@ -475,7 +476,7 @@
        </div>
      </section>
     <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
-    <section id="review" class="bg-primaryColorLight py-20">
+    <section id="review" class="bg-primaryColorLight py-20 dark:bg-darkColorLight">
        <div class="container">
         <div class="mx-auto max-w-md text-center">
           <h2 class="section__title">CUSTOMER REVIEW </h2>
@@ -486,7 +487,7 @@
         <div class="swiper py-10">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
-              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6">
+              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6 dark:bg-darkColor">
                 <p class="paragraph">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum corporis repudiandae, harum nulla eveniet ut quasi molestiae.
                 </p>
@@ -502,7 +503,7 @@
             </li>
 
             <li class="swiper-slide">
-              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6">
+              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6 dark:bg-darkColor">
                 <p class="paragraph">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum corporis repudiandae, harum nulla eveniet ut quasi molestiae.
                 </p>
@@ -518,7 +519,7 @@
             </li>
 
             <li class="swiper-slide">
-              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6">
+              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6 dark:bg-darkColor">
                 <p class="paragraph">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum corporis repudiandae, harum nulla eveniet ut quasi molestiae.
                 </p>
@@ -534,7 +535,7 @@
             </li>
 
             <li class="swiper-slide">
-              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6">
+              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6 dark:bg-darkColor">
                 <p class="paragraph">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum corporis repudiandae, harum nulla eveniet ut quasi molestiae.
                 </p>
@@ -550,7 +551,7 @@
             </li>
 
             <li class="swiper-slide">
-              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6">
+              <div class="flex flex-col bg-primaryColor rounded-lg gap-5 p-6 dark:bg-darkColor">
                 <p class="paragraph">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum corporis repudiandae, harum nulla eveniet ut quasi molestiae.
                 </p>
@@ -591,7 +592,6 @@
     </main>
     <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
     <footer>
-
       <section class="footer">
         <div class="container">
           <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
@@ -650,7 +650,8 @@
              </div>
             </li>
           </ul>
-          <div class="flex flex-col items-center border-t border-primaryColorLight py-5 md:flex-row md:justify-between">
+          <div class="flex flex-col items-center border-t border-primaryColorLight py-5 md:flex-row md:justify-between
+          dark:border-darkColorLight">
             <p class="paragraph">
               Burger Template Kit by Light Code
             </p>
@@ -665,6 +666,10 @@
     </footer>
 
     <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="" class="fixed right-4 -bottom-1/2 bg-secondaryColor shodow-sm rounded-full inline-block px-4 py-2 text-lg text-blackColor
+      z-50 hover:-translate-y-1 duration-200 ease-in" id="scroll-up" >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
   

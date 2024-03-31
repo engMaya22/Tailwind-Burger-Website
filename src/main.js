@@ -67,3 +67,62 @@ tabs.forEach(tab=>
     })
 
 )
+const scrollUp = ()=>{
+    const scrollBtn = document.getElementById('scroll-up')
+    if(this.scrollY>=250){
+        scrollBtn.classList.remove('-bottom-1/2')
+        scrollBtn.classList.add('bottom-4')
+    }else{
+        scrollBtn.classList.add('-bottom-1/2')
+        scrollBtn.classList.remove('bottom-4')
+    }
+}
+window.addEventListener('scroll',scrollUp)
+
+
+
+const scrollHeader = () => {
+    const header = document.getElementById("header");
+  
+    if (this.scrollY >= 50) {
+      header.classList.add("border-b", "border-secondaryColor");
+    } else {
+      header.classList.remove("border-b", "border-secondaryColor");
+    }
+  };
+  window.addEventListener("scroll", scrollHeader);
+  
+
+
+
+
+  
+//   Dark Light Theme
+
+const html = document.querySelector('html');
+const themeBtn = document.getElementById('theme-toggle');
+function darkMode (){
+    html.classList.add('dark');
+    themeBtn.classList.replace('ri-moon-line','ri-sun-line');
+    localStorage.setItem("mode",'dark');
+}
+function lightMode(){
+    html.classList.remove('dark');
+    themeBtn.classList.replace('ri-sun-line','ri-moon-line');
+    localStorage.setItem("mode",'light');
+}
+
+// for refresh
+if(localStorage.getItem('mode') == 'dark'){
+   darkMode();
+}
+if(localStorage.getItem('mode') == 'light'){
+    lightMode();
+ }
+
+themeBtn.addEventListener('click',(e)=>{
+    if(localStorage.getItem('mode') == 'light')
+       darkMode();
+    else 
+       lightMode();
+})

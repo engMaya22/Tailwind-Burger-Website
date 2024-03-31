@@ -4,8 +4,11 @@
 @tailwind utilities;
 
 @layer base{
+    html{
+        @apply scroll-smooth
+    }
     body {
-       @apply  bg-primaryColor text-whiteColor tracking-wider font-dmsans;
+       @apply  bg-primaryColor text-whiteColor tracking-wider font-dmsans dark:bg-blackColor;
     }
     section{
         @apply pt-16 pb-4 md:pt-20;
